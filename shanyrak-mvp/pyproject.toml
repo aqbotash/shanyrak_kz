@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "shanyrak-mvp"
+version = "0.1.0"
+description = ""
+authors = ["Akbota <aqbotamaratqyzy@gmail.com>"]
+readme = "README.md"
+packages = [{include = "shanyrak_mvp"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.101.0"
+uvicorn = "^0.23.2"
+python-multipart = "^0.0.6"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+pydantic = "^2.1.1"
+sqlalchemy = "^2.0.19"
+alembic = "^1.11.2"
+attrs = "^23.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
